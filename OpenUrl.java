@@ -7,10 +7,10 @@ public class OpenUrl {
          WebDriver driver=new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://lms.kluniversity.in/login/index.php");
+        System.out.println(driver.getTitle());
+        System.out.println(driver.getPageSource());
         driver.findElement(By.id("username")).sendKeys("2100030529");
         driver.findElement(By.id("password")).sendKeys("S@si20256");
         driver.findElement(By.id("password")).submit();
-
-
     }
 }
