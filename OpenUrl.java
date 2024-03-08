@@ -10,7 +10,7 @@ public class OpenUrl {
         driver.findElement(By.id("username")).sendKeys("2100030529");
         driver.findElement(By.id("password")).sendKeys("S@si20256");
         driver.findElement(By.id("password")).submit();
-
-
+        System.out.println("Alert Message:");
+        System.out.print(driver.findElement(By.className("alert")).getText());
     }
 }
